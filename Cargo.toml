@@ -1,0 +1,13 @@
+[package]
+name = "GrannyQOLMod"
+version = "1.0.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+retour = "0.3.1"
+hudhook = "0.9.3"
+windows = { version = "0.62.2", features = ["Win32_Foundation", "Win32_Security", "Win32_System_LibraryLoader", "Win32_System_Threading"] }
+anyhow = "1.0.104"
